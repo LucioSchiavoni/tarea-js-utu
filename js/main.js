@@ -64,7 +64,7 @@ handleButton.addEventListener("click", () => {
     let arrayUser = JSON.parse(localStorage.getItem("usuarios"));
     let itemDiv = "";
     arrayUser.forEach((usuario, indice) => {
-        itemDiv += `<div class="p-8 absolute left-10 border bg-white rounded-lg card w-50 m-auto " id="usuario${indice}">
+        itemDiv += `<div class="p-8 mt-10 mb-10 absolute left-10 border bg-white rounded-lg card w-50 m-auto " id="usuario${indice}">
             <div class="card-body">
                 <h2 class="card-title">Nombre: ${usuario.nombre}</h2>
                 <p class="card-text">Precio con IVA: $${usuario.precioConIVA}</p>
