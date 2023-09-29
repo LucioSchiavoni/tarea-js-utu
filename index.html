@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio JS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+</head>
+<body class="bg-gray-100">
+    <main class="text-2xl ">
+        <form id="formUser" method="POST" class="p-6 border w-3/12 m-auto mt-64 space-y-10 bg-white shadow-xl">
+            <h2 class="text-center text-3xl font-bold text-blue-800">Regístrate</h2>
+            <div class="flex flex-col">
+                <input type="text" id="nombre" name="nombre"
+                    class="rounded-lg p-2 border focus:border-blue-800 focus:ring-2 focus:outline-none italic"
+                    placeholder="Nombre.." required>
+            </div>
+            <div class="flex flex-col">
+                <input type="text" id="precio" name="precio"
+                    class="rounded-lg p-2 border focus:border-blue-800 focus:ring-2 focus:outline-none italic"
+                    placeholder="Precio..">
+            </div>
+            <div class="flex flex-col mb-4">
+                <label for="imagen" class="italic text-blue-800">Imagen</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+            </div>
+            <button class="mt-10 px-6 border py-1 rounded-lg bg-blue-800 text-white text-2xl" type="submit">Enviar</button>
+        </form>
+        <button id="handleButton"
+            class="px-6 py-1 rounded-lg shadow-xl text-white bg-blue-800 w-52 absolute top-10 left-10">Mostrar
+            Usuarios</button>
+        <div id="divUser"></div>
+    </main>
+
+    <script src="./js/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
