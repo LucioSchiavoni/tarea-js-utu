@@ -69,7 +69,7 @@ handleButton.addEventListener("click", () => {
                 <h2 class="card-title">Nombre: ${usuario.nombre}</h2>
                 <p class="card-text">Precio con IVA: $${usuario.precioConIVA}</p>
                 <img src="${usuario.imagen}" alt="Imagen de usuario" class="card-text" style="max-width: 100px; max-height: 100px;">
-                <button class=" mt-10 px-6 py-1 rounded-lg text-white bg-blue-800 shadow-xl ">Cancelar reserva</button>
+                <button class=" mt-10 px-6 py-1 rounded-lg text-white bg-blue-800 shadow-xl ">Cancelar Registro</button>
             </div>
         </div>`;
     });
